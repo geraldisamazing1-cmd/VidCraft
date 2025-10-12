@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VidCraft Studios | Photo & Film</title>
+  <link rel="stylesheet" href="stylE (1).css" />
+</head>
+<body>
+   <!-- Horizontal Opening Animation -->
+<div id="intro-overlay">
+  <div class="intro-panel left"></div>
+  <div class="intro-panel right"></div>
+  <div class="intro-logo">
+    <img src="logo2.png" alt="VidCraft Studios Logo">
+  </div>
+</div>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">VidCraft Studios</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li><br>
+        <li><a href="#gallery">Gallery</a></li><br>
+        <li><a href="services.html">Services</a></li><br>
+        <li><a href="#contact">Contact</a></li><br>
+        <li><a href="about.html">About</a></li><br>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <img src="logo2.png" alt="VidCraft Studios Logo" class="hero-logo">
+    <h1>VidCraft Studios</h1>
+    <p>Photo & Film<br>Crafting Memories, Capturing Moments</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <h2>GALLERY</h2>
+    <p>
+      VidCraft Studios offers professional photo and film services for all occasions
+      from birthdays and weddings to debuts and corporate events. 
+      With creativity, skill, and passion, our team captures meaningful moments 
+      and turns them into lasting memories.
+    </p>
+    <div class="gallery-grid">
+      <img src="bonbon.jpeg" alt="Gallery Image 1"><br>
+      <img src="bon.jpg" alt="Gallery Image 2"><br>
+      <img src="bonina.jpg" alt="Gallery Image 3"><br>
+      <img src="boninerl.jpeg" alt="Gallery Image 4"><br>
+    </div>
+  </section>
+  <style>
+      
+  .contact-section {
+  margin: 40px auto; /* adds space above and below the section */
+  padding: 20px;     /* adds inner space around the text */
+  text-align: left; /* keeps it nicely centered */
+}
+ </style>
+<section id="contact" class="contact-section">
+    <h3>Contact Us</h3>
+    <p>
+      Let’s bring your story to life! <br />
+      📍 Greenheights, Barangay Marcelo Green Village,<br> Parañaque City <br />
+      ☎ +69 951-960-0423 <br />
+      ✉ vidcraftstudios@gmail.com <br />
+      🌐 Follow us:
+      <a href="https://facebook.com/VidCraftStudios" style="color:#d4af37;">Facebook</a> |
+      <a href="https://instagram.com/VidCraft.Studios" style="color:#d4af37;">Instagram</a>
+    </p>
+</section>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 VidCraft Studios | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  <script>
+window.addEventListener('load', () => {
+  const overlay = document.getElementById('intro-overlay');
+
+  // Step 1: Wait for 0.5s, then slide panels open
+  setTimeout(() => {
+    overlay.classList.add('close');
+  }, 2000);
+
+  // Step 2: After sliding, fade out overlay
+  setTimeout(() => {
+    overlay.classList.add('fade-out');
+  }, 3500);
+
+  // Step 3: Completely remove from view
+  setTimeout(() => {
+    overlay.style.display = 'none';
+  }, 4000);
+});
+</script>
+</body>
+</html>

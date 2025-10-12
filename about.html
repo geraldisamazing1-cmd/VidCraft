@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VidCraft Studios | Photo & Film</title>
+  <link rel="stylesheet" href="stylE (1).css" />
+</head>
+<style>
+    /* ===== BASIC STYLING ===== */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f3e2c2; /* beige tone */
+      color: #2c0000; /* deep maroon text */
+    }
+
+    /* ===== FIXED NAVBAR ===== */
+    header.navbar 
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #2c0000;
+      color: #d4af37;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-family: "Brush Script MT", cursive;
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #f5e6c4;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    /* ===== ABOUT SECTION WITH IMAGES ===== */
+    section.about-banner {
+      margin-top: 40px;/* push content below navbar */
+      text-align: center;
+      background-color: #e7cfab;
+      padding: 20px 0;
+    }
+
+    .about-banner img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .about-banner h1 {
+      font-size: 2.5rem;
+      color: #4b0000;
+      margin: 20px 0;
+      letter-spacing: 2px;
+      font-weight: 700;
+      border-top: 3px solid #4b0000;
+      border-bottom: 3px solid #4b0000;
+      display: inline-block;
+      padding: 10px 0;
+    }
+
+    /* ===== MAIN TEXT CONTENT ===== */
+    section.about-content {
+      background-color: #4b0000;
+      color: #f5e6c4;
+      padding: 3rem 2rem;
+      line-height: 1.7;
+    }
+
+    section.about-content h2,
+    section.about-content h3 {
+      color: #f5e6c4;
+    }
+
+    section.about-content ul {
+      margin-left: 2rem;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .about-banner img {
+        width: 90%;
+      }
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #2c0000;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 60%;
+        padding: 1rem;
+      } 
+      nav ul li {
+  margin: 0.1rem 0;
+      }
+      
+      nav ul.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">VidCraft Studios</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="emtech.html">Home</a></li>
+        <li><a href="emtech.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+  </header>
+  
+  <section class="about-banner">
+    <img src="bon3.jpg" alt="Team Photo Top" />
+    <h1>ABOUT US</h1>
+    <img src="bon2.jpg" alt="Team Photo Bottom" />
+  </section>
+
+  <!-- ===== MAIN ABOUT CONTENT ===== -->
+  <section class="about-content">
+    <p>
+      Welcome to <strong>VidCraft Studios</strong> where creativity meets storytelling.
+      We are a team of passionate photographers, videographers, and editors dedicated
+      to capturing life’s most meaningful moments through cinematic visuals and artistic expression.
+    </p><br>
+
+    <p>
+      At VidCraft Studios, we believe every story deserves to be told beautifully
+     whether it’s a wedding, debut, birthday, or milestone event. Our mission is
+      to provide high-quality and affordable photo and film services that reflect
+      authenticity, creativity, and heart.
+    </p><br>
+
+    <h3>Our Story</h3>
+    <p>
+      VidCraft Studios began as a student-led project by a group of young creatives
+      from Don Bosco High School Parañaque. What started as a simple idea soon
+      turned into a trusted brand in the community known for its passion, artistry,
+      and professionalism.
+    </p><br>
+
+    <p>
+      From our humble home-based setup, we’ve grown into a full-service studio
+      dedicated to capturing timeless memories. Today, we continue to craft visuals
+      that celebrate love, life, and creativity one frame at a time.
+    </p><br>
+
+    <h3>Our Vision</h3>
+    <p>
+      To be a trusted creative studio recognized for producing impactful, artistic,
+      and high-quality photo and video content that captures the essence of every story.
+    </p><br><br>
+
+    <h3>Our Mission</h3>
+    <p>
+      To craft meaningful visuals that connect with people, celebrate emotions,
+      and exceed client expectations through creativity, collaboration, and professional service.
+    </p><br><br>
+
+    <h3>Our Core Values</h3>
+    <ul>
+      <li><b>Creativity</b> – We value originality and artistry in every project we do.</li>
+      <li><b>Affordability</b> – We provide quality services that are accessible to everyone.</li>
+      <li><b>Collaboration</b> – We work as a team with our clients to achieve the best results.</li>
+      <li><b>Growth & Learning</b> – We constantly improve and adapt to new trends and technologies.</li>
+      <li><b>Customer-Centered Service</b> – Your story and satisfaction are always our top priority.</li>
+    </ul><br><br>
+
+    <h3>Our Services</h3>
+    <ul>
+      <li>Photography: Weddings, debuts, birthdays, portraits, creative shoots</li>
+      <li>Videography: Full-event coverage, highlight reels, cinematic videos</li>
+      <li>Editing Services: Transitions, effects, music, and color grading</li>
+      <li>Custom Projects: School, business, or social media content</li>
+    </ul><br><br>
+<section id="contact" class="contact-section">
+    <h3>Contact Us</h3>
+    <p>
+      Let’s bring your story to life! <br />
+      📍 Greenheights, Barangay Marcelo Green Village, Parañaque City <br />
+      ☎ +69 951-960-0423 <br />
+      ✉ vidcraftstudios@gmail.com <br />
+      🌐 Follow us:
+      <a href="https://facebook.com/VidCraftStudios" style="color:#d4af37;">Facebook</a> |
+      <a href="https://instagram.com/VidCraft.Studios" style="color:#d4af37;">Instagram</a>
+    </p>
+</section>
+  </section>
+  <footer>
+    <p>© 2025 VidCraft Studios | All Rights Reserved</p>
+  </footer>
+  <script>
+    // Mobile menu toggle
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
